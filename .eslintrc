@@ -6,9 +6,6 @@
         "eslint-plugin-react",
         "react"
     ],
-
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
-
     "env": {
         "browser": true,
         "es6": true,
@@ -177,7 +174,6 @@
         "no-unneeded-ternary": 2,
         "no-unreachable": 2,
         "no-unused-expressions": 2,
-        "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
         "no-use-before-define": 0,
         "no-useless-call": 2,
         "no-var": 2,
@@ -194,10 +190,9 @@
         "prefer-reflect": 0,
         "prefer-spread": 0,
         "quote-props": [2, "as-needed"],
-        "quotes": [2, "double"],
+        "quotes": [2, "single"],
         "radix": 2,
         "require-yield": 2,
-        "semi": [2, "always"],
         "semi-spacing": [2, {"before": false, "after": true}],
         "sort-vars": 0,
         "space-before-blocks": [2, "always"],
