@@ -1,5 +1,5 @@
-import React from "react";
-import DateTime from "./DateTime";
+import React from 'react'
+import DateTime from './DateTime'
 
 function MessagePreview(props) {
   return (    
@@ -18,7 +18,7 @@ function MessagePreview(props) {
         </div>
       </a>
     </li>
-  );
+  )
 }
 
-export default MessagePreview;
+export default MessagePreview

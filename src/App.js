@@ -1,15 +1,15 @@
-import React from "react";
-import TopNav from "./components/TopNav";
-import PropTypes from "prop-types";
-import AreaChart from "./components/AreaChart";
-import Comments from "./components/Comments";
-import DonutChart from "./components/DonutChart";
-import Orders from "./components/Orders";
-import SideNav from "./components/SideNav";
-import Tasks from "./components/Tasks";
-import TasksPanel from "./components/TasksPanel";
-import Tickets from "./components/Tickets";
-import TransactionsPanel from "./components/TransactionsPanel";
+import React from 'react';
+import TopNav from './components/TopNav';
+import PropTypes from 'prop-types';
+import AreaChart from './components/AreaChart';
+import Comments from './components/Comments';
+import DonutChart from './components/DonutChart';
+import Orders from './components/Orders';
+import SideNav from './components/SideNav';
+import Tasks from './components/Tasks';
+import TasksPanel from './components/TasksPanel';
+import Tickets from './components/Tickets';
+import TransactionsPanel from './components/TransactionsPanel';
 
 
 function App(props) {
@@ -54,7 +54,6 @@ function App(props) {
         </div>
       </div>
     </div>
-
   );
 }
 

@@ -1,8 +1,8 @@
-import React from "react";
-import {connect} from "react-redux";
+import React from 'react';
+import {connect} from 'react-redux';
 
 function Tickets(props) {
-  return(
+  return (
     <div className="col-lg-3 col-md-6">
       <div className="panel panel-red">
         <div className="panel-heading">
@@ -19,12 +19,13 @@ function Tickets(props) {
         <a href="#">
           <div className="panel-footer">
             <span className="pull-left">View Details</span>
-            <span className="pull-right"><i className="fa fa-arrow-circle-right"></i></span>
+            <span className="pull-right"><i className="fa fa-arrow-circle-right" /></span>
             <div className="clearfix"></div>
           </div>
         </a>
       </div>
-    </div>);
+    </div>
+  );
 }
 const mapStateToProps = function (state) {
   return {
