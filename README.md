@@ -20,19 +20,21 @@ fork, clone, npm install, npm start
 
 ### Create the store
 * Create a store.js file inside the src folder (src/store.js)
-* Import createStore from redux
+* Import `{ createStore }` from redux
 * Import state from state.js
 * Import reducers from reducers/index
 * Create the store and export it
+  * https://redux.js.org/api/createstore
+  * `export default createStore(reducers, state)`
 
 ### Provide store to components
 * In src/index.js
-* Import Provider from react-redux
+* Import `{ Provider }` from react-redux
 * Import store from store.js
 * Use Provider component to wrap App
 * Give Provider a prop “store” and the value of the store
 
-### Make the following Components into Containers (see below)
+### Make the following Components into Containers (see below, "create containers")
 * Tickets (use as example)
 * TransactionPanel 
 * TopNav
@@ -43,8 +45,8 @@ fork, clone, npm install, npm start
 
 ### Create Containers
 * In each Container:
-* Import connect from react-redux
-* Create a function called mapStateToProps that takes parameter state
+* Import `{ connect }` from react-redux
+* Create a function called `mapStateToProps` that takes parameter state
 * Return an object. Decide what prop the component needs and this will be a key on the object
   * To decide which props the component needs, search the file for `props`
 * Decide what data from state the component needs and that will be the value on the object
@@ -56,6 +58,6 @@ fork, clone, npm install, npm start
 ### Think - Why do the other components not care about the store such that we don't need to make them Containers?
 
 ### Fix
-* In App.js remove the props parameter and all instances of passing props 
+* In App.js remove the props parameter and all instances of passing props. Additionally, remove the App.propTypes object.
 * In index.js remove all instances of state and passing props to App
 
